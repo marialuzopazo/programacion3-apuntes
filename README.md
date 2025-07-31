@@ -13,5 +13,6 @@ LO QUE SE VA A PODER ENCONTRAR EN EL MISMO:
 video tutorial para instalar terminal / powershell en casa:https://www.youtube.com/watch?v=6SGIFVJ5Izs
 
 sitios web utiles para reforzar contenidos: 
+https://developer.mozilla.org/es/docs/Web/HTML (html que esta en el repositorio del profe )
 https://www.w3schools.com/html/ ( html )
 https://lenguajehtml.com/html/  (html)
