@@ -1,5 +1,5 @@
-# programacion3-apuntes
-apuntes y ejercicios de clase programacion 3 utn - frsn 
+# REPOSITORIO DE APUNTES : programacion3 y metodologia 1
+* apuntes y ejercicios de clase programacion 3 utn - frsn 
 --------------------------------------
 Esto es un repositorio compartido, conformado por: 
 
