@@ -1,0 +1,145 @@
+TABLA BASICA
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tablas</title>
+</head>
+<body>
+    <!-- border en el grosor del borde de la tabla -->
+    <table border="5">
+        <!-- 2 filas tr y 3 columnas td (tr*2 td*3) -->
+        <tr>
+            <td>nombre: </td>
+            <td>apellido:</td>
+            <td>edad: </td>
+        </tr>
+        <tr>
+            <td>juan</td>
+            <td>perez</td>
+            <td>28</td>
+        </tr>
+    </table>
+</body>
+</html>
+
+--------------------------------
+OTRA MAS ALINEADA. no recuerdo otras maneras qe haya hecho el profe
+COLSPAN Y ROWSPAN POSICIONAMIENTOS
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tablas</title>
+</head>
+
+<body>
+    <table border="5">
+        <tr>
+            <!-- El valor del colspan representa el número de columnas a abarcar. -->
+            <td colspan="2">nombre apellido:</td>
+            <td >edad: </td>
+        </tr>
+        <tr>
+            <td colspan="2">juan perez</td>
+            <td>28</td>
+        </tr>
+        <tr>
+            <td colspan="2">mario gomez</td>
+            <td>29</td>
+        </tr>
+    </table>
+</body>
+
+</html>
+
+--------------------
+AGREGA thead,tbody,tfooter y el th
+según chat gpt y la otra pagina school <th> no debe contener <tr>, esta asi en una de las fotos
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tablas</title>
+</head>
+<body>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>nombre</th>
+                <th>apellido</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>juan</td>
+                <td>perez</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr><td colspan="2">2025 @copyrigth &copy; </td></tr>
+        </tfoot>
+    </table>
+</body>
+</html>
+
+
+---
+tmb esta el uso del ROWSPAN. ejemplos
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tablas</title>
+</head>
+
+<body>
+    <table border="5">
+        <tr>
+            <td rowspan="2">nombre y apellido:</td>
+            <td>juan perez</td>
+            <td>28</td>
+        </tr>
+        <tr>
+            <!-- ya no se repite la celda de "nombre y apellido" -->
+            <td>mario gomez</td>
+            <td>29</td>
+        </tr>
+    </table>
+</body>
+
+</html>
+
+-------------------
+POSIBILIDAD CON EL ROWSPAN. ver!
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tablas</title>
+</head>
+
+<body>
+    <table border="5">
+        <tr>
+            <td rowspan="2">edad: </td>
+            <td>28</td> <td>juan perez</td>
+        </tr>
+        
+        <tr>
+            <td>29</td> <td>maria lopez</td>
+           
+        </tr>
+    </table>
+</body>
+
+</html>
