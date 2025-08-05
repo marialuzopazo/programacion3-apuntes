@@ -11,3 +11,9 @@ El sentido de responsabilidad único en programación se refiere a un principio
 El SRP establece que:
 "Una clase debe tener una, y solo una, razón para cambiar."
 Esto quiere decir que cada módulo, clase o función debe encargarse de una sola parte del funcionamiento del programa. Si una clase tiene más de una responsabilidad, esas responsabilidades se acoplan, lo que puede dificultar el mantenimiento y la evolución del código.
+****************************
+etiqueta style y estilos en linea 
+en la de linea una clave y un valor 
+y en la etiqueta style - le doy un selector ( selecciona algo del documento con una llave) 
+****************************
+selector universal *
