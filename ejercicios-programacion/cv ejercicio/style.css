@@ -1,0 +1,25 @@
+body {
+    background-color: #333;
+    color: #f0f0f0;
+    border: 2px solid violet;
+    min-height: 100vh;
+}
+.header {
+    background-color: red;
+    color:  violet;
+    box-shadow: 2px 2px 4px #ca5c5c;
+    border-radius: 20%; 
+}
+#titulo {
+    color: #c5da0d;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 32px;
+    font font-weight
+    letter-spacing: 10px;
+    text-align:center;
+
+}
+
+ul {
+    list-style: lower-greek;
+}
