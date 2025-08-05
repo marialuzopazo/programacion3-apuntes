@@ -16,4 +16,4 @@ etiqueta style y estilos en linea 
 en la de linea una clave y un valor 
 y en la etiqueta style - le doy un selector ( selecciona algo del documento con una llave) 
 ****************************
-selector universal *
+selector universal *  en css
