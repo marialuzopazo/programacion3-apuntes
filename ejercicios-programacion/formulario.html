@@ -1,4 +1,4 @@
-FORMULARIO. email y contraseña lo hice chat gpt, no alcance a sacarle foto
+FORMULARIO. corregido, esta encuadrado para datos personales y no lo de seguridad
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,44 +11,29 @@ FORMULARIO. email y contraseña lo hice chat gpt, no alcance a sacarle foto
     <h1>formulario</h1>
     <!-- "post" es seguro, no muestra la contraseña -->
     <form method="get">
-    <div>
-        <label for="nombre-persona">nombre: </label>
-        <br/>
-        <input
-        type="text"
-        name="nombre"
-        id="nombre"
-        placeholder="juan"
-        autocomplete="name"
-        required
-        />
-    </div>
-    <br/>
-    <div>
-        <label for="apellido-persona">apellido: </label>
-        <br/>
-        <input
-        type="text"
-        name="apellido"
-        id="apellido"
-        placeholder="perez"
-        autocomplete="family-name"
-        required
-        />
-    </div>
-    <br/>
-    <div>
-        <label for="edad-persona">edad: </label>
-        <br/>
-        <input
-        type="number"
-        name="edad"
-        id="edad-persona"
-        placeholder="20"
-        autocomplete="cc-number"
-        required
-        />
-    </div>
+        <!-- tipo como seccion -->
+        <fieldset>
+            <legend>datos personales: </legend>
+            <div>
+                <label for="nombre-persona">nombre: </label>
+                <br />
+                <input type="text" name="nombre" id="nombre" placeholder="juan" autocomplete="name" required maxlength="50"
+                    minlength="2" pattern="/[A-Z]/g" />
+            </div>
+            <br />
+            <div>
+                <label for="apellido-persona">apellido: </label>
+                <br />
+                <input type="text" name="apellido" id="apellido" placeholder="perez" autocomplete="family-name" />
+            </div>
+            <br />
+            <div>
+                <label for="edad-persona">edad: </label>
+                <br />
+                <input type="number" name="edad" id="edad-persona" placeholder="20" autocomplete="cc-number" min="18" />
+            </div>
+
+        </fieldset>
     <br/>
     <div>
         <label for="email-persona">email</label>
@@ -59,14 +44,83 @@ FORMULARIO. email y contraseña lo hice chat gpt, no alcance a sacarle foto
         id="email-persona"
         placeholder="pepe@email.com"
         autocomplete="email"
-        required
+        
         />
         </div>
         <br />
         <div>
-            <label for="password" >contraseña:</label>
+            <label for="pass-persona" >contraseña:</label>
             <br />
             <input
+            type="password"
+            name="pass"
+            id="pass-persona"
+            placeholder="123456"
+            autocomplete="new-password"
+            />
+    </div>
+    <br/>
+    <div>
+        <label for="obervaciones">obervaciones: </label>
+        <br/>
+        <!-- etiqta espec -->
+        <textarea name="obervaciones" id="obervaciones" rows="3" cols="3"
+        ></textarea>
+    </div>
+    <br/>
+    <div>
+        <label for="provincias">provincia: </label>
+        <br/>
+        <select name="provincias" id="provincias">
+            <!-- seleccionar a eleccion -->
+            <option>selccionar ...</option>
+            <option value="bs">buenos aires</option>
+            <option value="sf">santa fe</option>
+            <option value="jj">jujuy</option>
+            <option value="men">mendoza</option>
+            <option value="tdf" selected>tierra del fuego</option>
+        </select>
+    </div>
+    <br/>
+    <div>
+        <!-- checked tildado + de un puede ser -->
+        <input type="checkbox" name="terminos" id="terminos" checked>
+        <label for="terminos">acepto todo pa este pagina</label>
+        <br/>
+    </div>
+    <br/>
+    <div>
+        <label for="f">F</label>
+        <input type="radio" name="genero" id="f" value="f">
+        <br/>
+        <label for="m">M</label>
+        <input type="radio" name="genero" id="m" value="m">
+        <br/>
+        <label for="otro">otro genero</label>
+        <input type="radio" name="genero" id="otro" value="otro">
+    </div>
+    <br/>
+    <div>
+        <label for="distancia">distancia (km)</label>
+        <br/>
+        <input type="range" name="distancia" id="distancia" min="2" max="10">
+    </div>
+    <br/>
+    <div>
+        <label for="img">foto de perfil</label>
+        <br/>
+        <input type="file" name="img" id="img" accept="image/*">
+    </div>
+    <br/>
+    <div>
+       <label for="fnac">fecha de nacmimieto</label>
+        <br/>
+        <input type="date" name="fnac" id="fnac">
+    </div>
+    <button type="submit">enviar! </button>
+    </form>
+</body>
+</html>
             type="password"
             name="password"
             id="password"
