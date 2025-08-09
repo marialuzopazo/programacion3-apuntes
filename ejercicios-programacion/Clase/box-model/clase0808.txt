@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        .box
+        {
+           box-sizing: border-box;
+           width: 200px;
+           height: 200px;
+           border: 2px solid black;
+           padding: 10px;
+           margin-left: 10px;
+           background-color: #b1b1b1;
+           overflow: scroll;
+        }
+
+        .box-hijo
+        {
+          box-sizing: border-box;
+            width: 100px;
+            height: 100px;
+            padding: 5px;
+            border: 2px solid green;
+            background-color: greenyellow;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box">Caja 200 x 200 
+    <div class="box-hijo">Cja 2 200 x200</div>
+    <div class="box-hijo">Cja 2 200 x200</div>
+    </div>
+</body>
+</html>
+
+
+
+
+----el primer modelo
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        .box
+        {
+            box-sizing: content-box;
+           width: 200px;
+           height: 200px;
+           border: 2px solid black;
+           padding: 10px;
+           margin-left: 10px;
+
+           background-color: #b1b1b1;
+        }
+
+        .box2
+        {
+          background-color: bisque;
+          margin-top: -160px;
+          margin-left: 50px;
+          position: relative;
+          z-index: 1;
+        }
+
+        .box3
+        {
+             background-color: violet;
+          margin-top: -120px;
+          margin-left: 40px;
+          position: relative;
+          z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">Caja 200 x 200 </div>
+    <div class=" box box2">Cja 2 200 x200</div>
+    <div class="box box2 box3"> caja 3 200 x 200</div>
+</body>
+</html>
+
+
+------tercera 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        .box {
+            border: 2px solid black;
+            padding: 10px;
+            min-height: 100px ;
+            max-width: 150px; ;
+            margin-left: 10px;
+            background-color: #bd0808c5;
+            overflow-y: scroll;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">Caja 200 x 200 Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim cumque vero esse ratione molestias! Accusantium amet doloribus provident animi nobis repellendus maiores ex soluta, quos quas reiciendis quo numquam ipsum? </div>
+</body>
+
+</html>
+
+-------------------------------------------
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        .box {
+            border: 2px solid black;
+            padding: 10px;
+            width: 200px;
+            height: 200px;
+            margin-left: 10px;
+            background-color: #bd0808c5;
+            
+        }
+        .inner-box {
+            width: 50px;
+            height: 50px;
+            padding: 3px;
+            margin: 5px ;
+            border: 2px solid black;
+            background-color: blueviolet;
+        }
+
+          .box1
+        {
+            float:left;
+        }
+
+        .box2
+        {
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="inner-box box1">caja 1</div>
+        <div class="inner-box box2">caja 2</div>
+    </div>
+</body>
+
+</html>
