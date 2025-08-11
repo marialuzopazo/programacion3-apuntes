@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #333;
+}
+.caja{ 
+    width: 150px;
+    height: 150px;
+
+}
+.cajaEstatica{
+    background-color: #fff;
+    position: static; 
+}
+
+.cajaRelativa{
+    background-color: #f00;
+    position: relative;
+   
+    z-index: 1;
+}
+.cajaAbsoluta{
+    background-color: #8f168f;
+    position: absolute;
+    right: 50%;
+    top: 50%;
+
+
+    transform: translate(-50%,-50%);
+
+}
+.cajaFija{
+    position: fixed;
+    background-color: #34ed34;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+
+    bottom: 4px;
+    right: 20px;
+}
+
+.cajaPegajosa{
+    position: sticky;
+    background-color: #ef9ffa;
+    width: 100%;
+    height: 50px;
+    top: 20px;
+
+}
+.contenido{
+    background-color: #9085f0;
+    width: 200px;
+    position: relative;
+    left: 50px;
+}
+
+h4{
+    position: absolute;
+   top: 50%;
+   right: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+h1{
+    display: block;
+}
+.contenedor{
+    width: 250px;
+    background-color: aquamarine;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 6px;
+    flex-wrap: wrap;
+} 
